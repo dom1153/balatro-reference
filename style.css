@@ -78,19 +78,24 @@ a:hover {
   margin: 0.5em;
 }
 
-#jokers, #cards, #modifyJoker {
+#jokers,
+#cards,
+#modifyJoker {
   display: flex;
   flex-direction: column;
 }
 
-#jokers > div, #cards > div, #modifyJoker > div, #handModifiers {
+#jokers>div,
+#cards>div,
+#modifyJoker>div,
+#handModifiers {
   display: flex;
   justify-content: center;
 }
 
-#jokers > div > .tooltip:last-child,
-#cards > div > .tooltip:last-child,
-#modifyJoker > div > .tooltip:last-child {
+#jokers>div>.tooltip:last-child,
+#cards>div>.tooltip:last-child,
+#modifyJoker>div>.tooltip:last-child {
   width: 100%;
 }
 
@@ -113,7 +118,7 @@ html {
   white-space: nowrap;
 }
 
-@media (min-width: 850px)  {
+@media (min-width: 850px) {
   @media (min-height: 350px) {
     html {
       height: 100%;
@@ -171,7 +176,9 @@ html {
   width: 100%;
 }
 
-#jokerArea, #bestPlay, #cardsInHand {
+#jokerArea,
+#bestPlay,
+#cardsInHand {
   display: flex;
   gap: 0;
   grid-auto-columns: auto;
@@ -330,7 +337,8 @@ html {
   margin-right: -0.4em;
 }
 
-.modifierCard, .jmodifierCard {
+.modifierCard,
+.jmodifierCard {
   position: absolute;
   left: 0;
   display: inline-block;
@@ -354,13 +362,21 @@ html {
   z-index: 1;
 }
 
-.modifierCard:hover, .jmodifierCard:hover, .jokerCard:hover, .playingCard:hover, .playfieldCard:hover {
+.modifierCard:hover,
+.jmodifierCard:hover,
+.jokerCard:hover,
+.playingCard:hover,
+.playfieldCard:hover {
   scale: 1.1;
   animation: bounce 0.3s ease;
   z-index: 2;
 }
 
-.jokerCard:after, .playingCard:after, .jmodifierCard:after, .modifierCard:after, .playfieldCard:after {
+.jokerCard:after,
+.playingCard:after,
+.jmodifierCard:after,
+.modifierCard:after,
+.playfieldCard:after {
   content: '';
   width: 71px;
   height: 100%;
@@ -374,7 +390,11 @@ html {
   mask-mode: alpha;
 }
 
-.jokerCard:hover:after, .playingCard:hover:after, .jmodifierCard:hover:after, .modifierCard:hover:after, .playfieldCard:hover:after {
+.jokerCard:hover:after,
+.playingCard:hover:after,
+.jmodifierCard:hover:after,
+.modifierCard:hover:after,
+.playfieldCard:hover:after {
   border-radius: 7px;
   box-shadow: 0px 10px 1px -3px #0005;
 }
@@ -383,15 +403,19 @@ html {
   1%: {
     scale: 1;
   }
+
   25% {
     scale: 1.15;
   }
+
   50% {
     scale: 1.075;
   }
+
   51% {
     scale: 1.075;
   }
+
   100% {
     scale: 1.1;
   }
@@ -454,6 +478,12 @@ html {
   width: 10%;
 }
 
+@media (max-width: 450px) {
+  .tooltip:has(.jokerCard) {
+    width: 20%;
+  }
+}
+
 .tooltip:has(.modifierCard) {
   width: 100%;
 }
@@ -490,25 +520,25 @@ html {
   transform: translate(-50%, 0);
 }
 
-.jokerCard + .tooltiptext {
+.jokerCard+.tooltiptext {
   bottom: calc(100% + 1em);
 }
 
-#jokerArea > .tooltip > .tooltiptext {
+#jokerArea>.tooltip>.tooltiptext {
   top: calc(100% + 1em);
 }
 
-.jokerCard:hover + .removeJoker + .tooltiptext,
-.jokerCard:hover + .tooltiptext,
-.modifierCard:hover + .tooltiptext,
-.jmodifierCard:hover + .tooltiptext {
+.jokerCard:hover+.removeJoker+.tooltiptext,
+.jokerCard:hover+.tooltiptext,
+.modifierCard:hover+.tooltiptext,
+.jmodifierCard:hover+.tooltiptext {
   visibility: visible;
   z-index: 3;
 }
 
 .title {
   font-size: 2em;
-	display: block;
+  display: block;
   text-align: center;
   white-space: nowrap;
   padding-left: 0.5em;
@@ -516,7 +546,7 @@ html {
 }
 
 .desc {
-	display: flex;
+  display: flex;
   align-items: center;
   padding: 0.25em;
   border-radius: 0.5em;
@@ -525,13 +555,13 @@ html {
   box-shadow: 0 0.1em 0 #ababab;
   min-height: 2em;
 
-	background-color: white;
-	color: black;
+  background-color: white;
+  color: black;
   white-space: nowrap;
 }
 
 .modifierName {
-	display: flex;
+  display: flex;
   align-items: center;
   padding: 0.25em;
   padding-left: 1em;
@@ -545,8 +575,8 @@ html {
   text-shadow: #474c8f -1px 2px;
   width: fit-content;
 
-	background-color: #757cdc;
-	color: #fff;
+  background-color: #757cdc;
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -555,7 +585,9 @@ html {
   text-align: center;
 }
 
-#cardsInHand .tooltip:last-child, #bestPlay .tooltip:last-child, #jokerArea .tooltip:last-child {
+#cardsInHand .tooltip:last-child,
+#bestPlay .tooltip:last-child,
+#jokerArea .tooltip:last-child {
   width: 100000%;
 }
 
@@ -581,13 +613,13 @@ html {
   border-width: 1px;
 }
 
-:not(#cardsInHand) > div:first-child > div > .positionButtons > .lvlBtn:first-child,
-:not(#cardsInHand) > div:last-child > div > .positionButtons > .lvlBtn:last-child {
+:not(#cardsInHand)>div:first-child>div>.positionButtons>.lvlBtn:first-child,
+:not(#cardsInHand)>div:last-child>div>.positionButtons>.lvlBtn:last-child {
   background-color: #374244;
 }
 
 @container(max-width: 45px) {
-  .lvlBtn:first-child + .lvlBtn {
+  .lvlBtn:first-child+.lvlBtn {
     order: 3;
   }
 }
@@ -636,27 +668,28 @@ input {
   white-space: nowrap;
 }
 
-.breakdownLine > div:first-child {
+.breakdownLine>div:first-child {
   display: inline-block;
   float: left;
   min-width: 78px;
 }
 
-.breakdownLine > div:first-child > .tooltip .playfieldCard {
+.breakdownLine>div:first-child>.tooltip .playfieldCard {
   animation: none;
 }
 
-.breakdownLine > div:first-child > .tooltip .playfieldCard:hover {
+.breakdownLine>div:first-child>.tooltip .playfieldCard:hover {
   animation: none;
   scale: 1;
   cursor: default;
 }
-.breakdownLine > div:first-child > .tooltip .playfieldCard:after {
+
+.breakdownLine>div:first-child>.tooltip .playfieldCard:after {
   box-shadow: none;
   border-radius: 0;
 }
 
-.breakdownLine > div > .tooltip {
+.breakdownLine>div>.tooltip {
   scale: 0.5;
   height: 47px;
   position: relative;
@@ -664,7 +697,7 @@ input {
   width: 36px;
 }
 
-.breakdownLine > span {
+.breakdownLine>span {
   display: inline-block;
   white-space: nowrap;
   margin-top: 0.2em;
@@ -673,7 +706,7 @@ input {
   top: 16px;
 }
 
-.breakdownLine > .levelStat {
+.breakdownLine>.levelStat {
   position: sticky;
   float: right;
   border-radius: 0.25em;
@@ -681,7 +714,7 @@ input {
   margin-top: 14px;
 }
 
-.jokerCard:hover + .removeJoker,
+.jokerCard:hover+.removeJoker,
 .removeJoker:hover {
   visibility: visible;
   top: -40%;
@@ -709,7 +742,7 @@ input {
   translate: 0 50%;
 }
 
-#modifyJoker .tooltip > .tooltiptext {
+#modifyJoker .tooltip>.tooltiptext {
   top: calc(100% + 1em);
   visibility: visible;
   scale: 0.75;
@@ -720,8 +753,8 @@ input {
   height: 450px;
 }
 
-.modifierCard + .tooltiptext,
-.jmodifierCard + .tooltiptext {
+.modifierCard+.tooltiptext,
+.jmodifierCard+.tooltiptext {
   left: -1em;
   translate: -50%;
 }
@@ -748,7 +781,6 @@ input {
   cursor: pointer;
   border-radius: 8px;
   margin-bottom: 1em;
-  vertical-align: middle;
 }
 
 .resetBtn:hover {

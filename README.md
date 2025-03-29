@@ -1,11 +1,11 @@
-# Balatro Calculator
+# Balatro Reference
 
-[Go to site](https://efhiii.github.io/balatro-calculator/)
+A reference quick of cards and jokers used in the video game [Balatro](https://www.playbalatro.com/).
 
-This tool lets you input a [Balatro](https://www.playbalatro.com/) hand with a specific scenario of jokers, hand upgrades, and drawn cards, and calculates what the highest scoring play is while showing you both what the play is and what it scores.
+I watch a lot of videos on youtube on gameplay about Balatro and wanted a way to be able to quickly search for jokers and other cards effects.
 
-You can also use this tool to try and conceive of your "perfect hand" to see what it would score.
+# Credits
 
-Currently, a couple of the jokers may not work correctly, but most of them do.
+Forked from https://github.com/EFHIII/balatro-calculator
 
-font used: https://managore.itch.io/m6x11
+Font used: https://managore.itch.io/m6x11
