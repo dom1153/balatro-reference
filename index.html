@@ -18,7 +18,7 @@
 
 <body>
   <div id="mainContainer">
-    <div id="containerLeft">
+    <div id="containerLeft" class="hidden">
       <div class="toggleArea" style="margin-bottom: 1em">
         <div id="toggleJoker" class="handLevel">
           <span id="toggleJokerBtn" class="lvlBtn" onclick="toggleJoker()">X</span>
@@ -68,12 +68,12 @@
     </div>
     <div id="containerRight">
       <div class="menuBtns">
-        <span class="menuBtn" id="JokersBtn">Jokers</span><span class="menuBtn" id="CardsBtn">Cards</span><span
-          class="menuBtn" id="HandsBtn">Hands</span><span class="menuBtn" id="BreakdownBtn">Breakdown</span><span
-          class="menuBtn" id="ModifyJokerBtn" style="display: none;">Edit</span>
+        <span class="menuBtn" id="JokersBtn">Jokers</span><span class="menuBtn hidden" id="CardsBtn">Cards</span><span
+          class="menuBtn hidden" id="HandsBtn">Hands</span><span class="menuBtn hidden"
+          id="BreakdownBtn">Breakdown</span><span class="menuBtn" id="ModifyJokerBtn" style="display: none;">Edit</span>
       </div>
       <div id="Jokers">
-        <div style="text-align: center;">
+        <div style="text-align: center;" class="hidden">
           <div id="jokerValue" class="handLevel"
             style="display: inline-block; width: auto; margin: 0.2em; min-width: 0">
             <span class="lvlBtn" onclick="incrementJokerValue(-1)">-</span>

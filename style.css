@@ -138,7 +138,7 @@ html {
     }
 
     #containerRight {
-      width: 50%;
+      width: 100%;
     }
 
     #mainContainer {
@@ -221,7 +221,7 @@ html {
   display: block;
   float: left;
   font-size: 22px;
-  width: 25%;
+  width: 100%;
   background-color: #333;
   text-align: center;
   padding-top: 0.75em;
@@ -785,4 +785,8 @@ input {
 
 .resetBtn:hover {
   background-color: #df2d20;
+}
+
+.hidden {
+  display: none;
 }
